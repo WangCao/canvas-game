@@ -1,0 +1,32 @@
+{
+  "name": "mitoast",
+  "version": "0.0.2",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development webpack serve",
+    "build": "cross-env NODE_ENV=production webpack",
+    "doc": "typedoc",
+    "doc-en": "typedoc --readme README_EN.md --out dist/docs_en",
+    "upload": "migc-fds -t production -d dist -p SDK"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.1.1",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-loader": "^2.1.1",
+    "html-webpack-plugin": "^5.2.0",
+    "jsdom": "^16.4.0",
+    "json-loader": "^0.5.7",
+    "less": "^4.1.1",
+    "less-loader": "^8.0.0",
+    "package.json": "^2.0.1",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.17",
+    "typedoc": "^0.20.28",
+    "typescript": "^4.2.2",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
